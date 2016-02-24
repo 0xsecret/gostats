@@ -1,4 +1,4 @@
-package statistics
+package gostats
 
 type statisticsError struct {
   error string
