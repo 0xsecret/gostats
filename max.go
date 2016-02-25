@@ -4,6 +4,7 @@ import (
   "math"
 )
 
+//return the largest value in a slice
 func Max(slice []float64) (float64, error) {
   if len(slice) == 0 {
     return math.NaN(), EmptySlice
