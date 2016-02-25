@@ -4,7 +4,7 @@ import (
   "math"
 )
 
-//adds all the value of a slice
+//return the sum of a sequence of a slice
 func Sum(slice []float64) (float64, error) {
   if len(slice) == 0 {
     return math.NaN(), EmptySlice
