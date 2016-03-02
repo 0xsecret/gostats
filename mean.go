@@ -12,7 +12,7 @@ func Mean(slice []float64) (float64, error) {
 //return the arithmetic mean of a slice
 func ArithmeticMean(slice []float64) (float64, error) {
   if len(slice) == 0 {
-    return math.NaN(), EmptySlice
+    return math.NaN(), EmptySliceError
   }
   sum, _ := Sum(slice)
   return sum / float64(len(slice)), nil
@@ -21,7 +21,7 @@ func ArithmeticMean(slice []float64) (float64, error) {
 //return the geometric mean of a slice
 func GeometricMean(slice []float64) (float64, error) {
   if len(slice) == 0 {
-    return math.NaN(), EmptySlice
+    return math.NaN(), EmptySliceError
   }
   var p float64 = 1
   for i := 0; i < len(slice); i++ {
