@@ -10,4 +10,5 @@ func (e gostatsError) Error() string {
 
 var (
   EmptySliceError = gostatsError{"slice is empty"}
+  ZeroElementError = gostatsError{"slice must not contain zero(0)"}
 )
