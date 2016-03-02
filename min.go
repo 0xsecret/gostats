@@ -7,7 +7,7 @@ import (
 //return the smallest value in a slice
 func Min(slice []float64) (float64, error) {
   if len(slice) == 0 {
-    return math.NaN(), EmptySlice
+    return math.NaN(), EmptySliceError
   }
   min := slice[0]
   for i := 1; i < len(slice); i++ {
