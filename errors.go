@@ -9,5 +9,5 @@ func (e gostatsError) Error() string {
 }
 
 var (
-  EmptySlice = gostatsError{"slice is empty"}
+  EmptySliceError = gostatsError{"slice is empty"}
 )
