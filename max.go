@@ -7,7 +7,7 @@ import (
 //return the largest value in a slice
 func Max(slice []float64) (float64, error) {
   if len(slice) == 0 {
-    return math.NaN(), EmptySlice
+    return math.NaN(), EmptySliceError
   }
   max := slice[0]
   for i := 1; i < len(slice); i++ {
