@@ -8,6 +8,6 @@ func (e gostatsError) Error() string {
   return e.error
 }
 
-var (                                           
+var (
   EmptySlice = gostatsError{"slice is empty"}
 )
