@@ -12,4 +12,5 @@ var (
   EmptySliceError      = gostatsError{"slice is empty"}                        
   ZeroElementError     = gostatsError{"slice must not contain zero(0)"}        
   NegativeElementError = gostatsError{"slice must not contain negative number"}
+  DuplicatedError      = gostatsError{"there is not exactly one most common number"}
 )
